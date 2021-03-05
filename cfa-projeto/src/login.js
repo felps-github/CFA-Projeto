@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from 'react-router-dom'
+
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import Button from '@material-ui/core/Button';
+import { Button } from '@material-ui/core';
+
 import logoImg from "./images/logo.svg";
 import imageFundo from "./images/imageFundo.svg";
 import iconLogin from "./images/icon-login.svg";
-import { Link } from 'react-router-dom'
-import {Formul, Template, Header, Icon, ButtonLogin, LinkFale, LinkRegu, LinkComo, InputCPF, InputSenha} from './styleLogin';
+
+import {Formul, Header, Main} from './styleLogin';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,45 +22,28 @@ const useStyles = makeStyles((theme) => ({
 
 const IndexPag = () => {
   const classes = useStyles();
-    return (
-      <div>
-        <Header>
-          <img src={logoImg} alt="logo-CFA" />
-          <nav>
-            <LinkFale>
-            <Link to="/FaleConosco">Fale Conosco</Link>
-            </LinkFale>
-            <LinkRegu>
-            <Link to="/Regulamento">Regulamento</Link>
-            </LinkRegu>
-            <LinkComo>
-            <Link to="/ComoFunciona">Como Funciona</Link>
-            </LinkComo>
-          </nav>
-        </Header>
+  return (
+    <div>
+      <Header>
+        <img src={logoImg} alt="logo-CFA" />
+        <nav>
+          <Link className="LinkFale" to="/FaleConosco">Fale Conosco</Link>
+          <Link className="LinkRegu"  to="/Regulamento">Regulamento</Link>
+          <Link className="LinkComo" to="/ComoFunciona">Como Funciona</Link>
+        </nav>
+      </Header>
 
-        <Icon>
-          <img src={iconLogin} alt="IconLogin" />
-        </Icon>
-
+      <Main>
         <Formul className={classes.root} noValidate autoComplete="off">
-          <InputCPF>
+          <img src={iconLogin} alt="IconLogin" />
           <TextField id="filled-basic" label="CPF, CNPJ OU CÓDIGO" variant="filled" />
-          </InputCPF>
-            <br /><br />
-          <InputSenha>
-          <TextField id="filled-password-input" label="SENHA" type="password" autoComplete="off" variant="filled" />
-          </InputSenha>
+          <TextField id="filled-password-input" label="SENHA" type="password" autoComplete="off" variant="filled"/>
+          <Button className="Button">ENTRAR</Button>
         </Formul>
-      
-        <ButtonLogin>
-          <Button>ENTRAR</Button>
-        </ButtonLogin>
-      
-        <Template>
-          <img src={imageFundo} alt="ImageFundo" />
-        </Template>
-      </div>
-    );
+        <img className="ImageFundo" src={imageFundo} alt="ImageFundo" />
+      </Main>
+    </div>
+  );
 }
+
 export default IndexPag;

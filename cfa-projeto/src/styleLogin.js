@@ -1,119 +1,65 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-    position: absolute;
-    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 96px;
-    left: 0px;
-    top: 0px;
-    
+
     img {
-        position: absolute;
-        width: 282px;
+        display: flex;
+        align-items: center;
+        width: 250px;
         height: 30px;
-        left: 30px;
-        top: 30px;
     }
+
     nav{
-        position: absolute;
-        width: 654px;
-        height: 48px;
-        left: 388px;
-        top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 800px;
+        height: 30px;
+    }
+
+    a{
+        padding: 10px;
+        color: #000;
+        margin-top: 15px;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #FFF;
+        background-color: #979797;
     }
 `;
 
-export const LinkComo = styled.div`
-a{
-    position: absolute;
-    text-decoration: none;
-    color: #000;
-    width: 105px;
-    height: 20px;
-    left: 300px;
-    top: 24px;
-}
-`;
+export const Formul = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
-export const LinkRegu = styled.div`
-a{
-    position: absolute;
-    text-decoration: none;
-    color: #000;
-    width: 90px;
-    height: 20px;
-    left: 500px;
-    top: 24px;
-}
-`;
-
-export const LinkFale = styled.div`
-a{
-    color: #000;
-    text-decoration: none;
-    position: absolute;
-    width: 90px;
-    height: 20px;
-    left: 700px;
-    top: 24px;
-    
-}
-   
-`;
-
-export const Formul = styled.form`
-
-    position: absolute;
-    width: 382px;
-    height: 200px;
-    left: 88px;
-    top: 280px;
-    text-align: center;
-`;
-
-export const Template = styled.div`
-    img {
-        position: absolute;
-        width: 500px;
-        height: 470px;
-        left: 700px;
-        top: 90px;
-    }
-`;
-
-export const Icon = styled.div`
-    img{
-    position: absolute;
-    width: 116px;
-    height: 115px;
-    left: 222px;
-    top: 110px;
-    }
-    
-`;
-export const ButtonLogin = styled.div`
-    button{
-        width: 382px;
+    .Button{
         background-color: #F69809;
-        color: #FFFF;
-        
+        height: 50px;
+        color: #FFF;   
     }
-    background-color: #F69809;
-    
-    position: absolute;
-    left: 92px;
-    top: 450px;
-    background-color: none;
-    border-color: white;
+    .Mui-focused{
+        color: #F69809;
+    }
+    .MuiInput-underline{
+        background-color: #F69809;
+    }
+    .MuiFormControl-root{
+        width: 350px;
+    }
+
+    img{
+        width: 120px;
+    }
 `;
 
-export const InputCPF = styled.label`
-    input{
-        width: 350px;
-    }
-`;
-export const InputSenha = styled.label`
-    input{
-        width: 350px;
-    }
+export const Main = styled.main`
+    display: flex;
+    justify-content: space-around;
 `;
