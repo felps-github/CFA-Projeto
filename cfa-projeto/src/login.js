@@ -9,7 +9,7 @@ import logoImg from "./images/logo.svg";
 import imageFundo from "./images/imageFundo.svg";
 import iconLogin from "./images/icon-login.svg";
 
-import {Formul, Header, Main} from './styleLogin';
+import {Formul, Header, Main} from './Styles/styleLogin';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,7 +25,7 @@ const IndexPag = () => {
   return (
     <div>
       <Header>
-        <img src={logoImg} alt="logo-CFA" />
+        <Link className="LinkImgLogo" to="/"><img src={logoImg} alt="logo-CFA" /></Link>
         <nav>
           <Link className="LinkFale" to="/FaleConosco">Fale Conosco</Link>
           <Link className="LinkRegu"  to="/Regulamento">Regulamento</Link>
@@ -37,7 +37,7 @@ const IndexPag = () => {
         <Formul className={classes.root} noValidate autoComplete="off">
           <img src={iconLogin} alt="IconLogin" />
           <TextField id="filled-basic" label="CPF, CNPJ OU CÓDIGO" variant="filled" />
-          <TextField id="filled-password-input" label="SENHA" type="password" autoComplete="off" variant="filled"/>
+          <TextField id="filled-password-input" label="SENHA" type="password" variant="filled"/>
           <Button className="Button">ENTRAR</Button>
         </Formul>
         <img className="ImageFundo" src={imageFundo} alt="ImageFundo" />

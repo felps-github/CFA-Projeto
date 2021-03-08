@@ -31,6 +31,9 @@ export const Header = styled.header`
         color: #FFF;
         background-color: #979797;
     }
+    .LinkImgLogo:hover{
+        background-color: #FFF;
+    }
 `;
 
 export const Formul = styled.div`
@@ -40,20 +43,16 @@ export const Formul = styled.div`
     justify-content: space-evenly;
 
     .Button{
-        background-color: #F69809;
+        background-color: #dd5900;
         height: 50px;
         color: #FFF;   
     }
     .Mui-focused{
-        color: #F69809;
-    }
-    .MuiInput-underline{
-        background-color: #F69809;
+        color: #dd5900;
     }
     .MuiFormControl-root{
         width: 350px;
     }
-
     img{
         width: 120px;
     }

@@ -1,33 +1,11 @@
 import styled from 'styled-components';
 
-export const Div = styled.div`
-    height: 20%;
-    .carousel-control-prev-icon{
-        background-color: #000;
-        width: 50px;
-        height: 50px;
-    }
-    .carousel-control-next-icon{
-        background-color: #000;
-        width: 50px;
-        height: 50px;
-    }
-    .carousel{
-        text-align: center;
-        width: auto;
-        height: auto;
-    }
-    .carousel-item{
-        height: 50%;
-    }
-`;
-
 export const DivLogin = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    margin-right: 10px;
+    margin-right: 30px;
      .icon{
         width: 50px;
         margin-right: 10px;
@@ -36,17 +14,23 @@ export const DivLogin = styled.div`
         font-family: Roboto;
         color: #000;
         text-decoration: none;
+        font-size: 20px;
     }
 `;
 
 export const DivLogo = styled.div`
     display: flex;
     align-items: center;
+    margin-left: 30px;
 `;
 
 export const DivTudo = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    .LinkImgLogo:hover{
+        background-color: #FFF;
+    }
 `;
 export const Header = styled.header`
     nav{
@@ -70,14 +54,34 @@ export const Header = styled.header`
     .linkLogin{
         color: #000;
     }
+    .linkLogin:hover{
+        background-color: #FFF;
+    }
 `;
 
-// export const DivHeader = styled.div`
-//     display: flex;
-//     justify-content: space-between;
-// `;
+export const Div = styled.div`
+    height: 20%;
+    .carousel-control-prev-icon{
+        background-color: #000;
+        width: 50px;
+        height: 50px;
+    }
+    .carousel-control-next-icon{
+        background-color: #000;
+        width: 50px;
+        height: 50px;
+    }
+    .carousel{
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+    .carousel-item{
+        height: 50%;
+    }
+`;
 
-export const DivMain = styled.div`
+export const DivFooter = styled.div`
     display: flex;
     align-items: center;
     flex-flow: row wrap;
