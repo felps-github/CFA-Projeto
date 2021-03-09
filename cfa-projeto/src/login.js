@@ -27,9 +27,9 @@ const IndexPag = () => {
       <Header>
         <Link className="LinkImgLogo" to="/"><img src={logoImg} alt="logo-CFA" /></Link>
         <nav>
-          <Link className="LinkFale" to="/FaleConosco">Fale Conosco</Link>
+          <Link className="LinkPremios" to="/Premios">Prêmios</Link>
           <Link className="LinkRegu"  to="/Regulamento">Regulamento</Link>
-          <Link className="LinkComo" to="/ComoFunciona">Como Funciona</Link>
+          <Link className="LinkFale" to="/FaleConosco">Fale Conosco</Link>
         </nav>
       </Header>
 

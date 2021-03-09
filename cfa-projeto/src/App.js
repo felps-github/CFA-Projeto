@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 import FirstImage from './images/carousel1.jpg';
 import SecondImage from './images/carousel2.jpg';
@@ -9,12 +8,13 @@ import FooterApp from './Components/FooterApp';
 
 import {Div} from './Styles/styleApp';
 
+
 function App() {
   return (
     <Div>
       <HeaderApp />
       <Carousel>
-        <Carousel.Item interval={2000}>
+        <Carousel.Item>
           <img className="d-block w-100" src={FirstImage} alt="First slide" />
           <Carousel.Caption>
             {/* <h3>Primeiro slide</h3>
@@ -22,7 +22,7 @@ function App() {
           </Carousel.Caption>
         </Carousel.Item>
         
-        <Carousel.Item interval={2000}>
+        <Carousel.Item>
           <img className="d-block w-100" src={SecondImage} alt="Second slide" />
           <Carousel.Caption>
             {/* <h3>Segundo slide</h3>
