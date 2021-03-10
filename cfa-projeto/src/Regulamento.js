@@ -8,7 +8,7 @@ import iconBrick from './images/brickwork.svg'
 import iconEngi from './images/engineer.svg'
 import iconWorker from './images/worker.svg'
 
-import {Main, divImgs} from './Styles/styleRegulamento';
+import {Main, DivImgs, DivJobs} from './Styles/styleRegulamento';
 
 class Regulamento extends React.Component {
     render () {
@@ -24,19 +24,27 @@ class Regulamento extends React.Component {
             <h2>Podem participar</h2>
             <hr></hr>
 
-            <p>Bombeiros Hidraúlicos</p>
-            <p>Eletricistas</p>
-            <p>Pedreiros</p>
-            <p>Pintores</p>
-            <p>Faz tudo</p>
-            <divImgs>
-                <img src={iconEngi} alt="Engineer" />
+            <DivJobs>
+                <p>Bombeiros Hidraúlicos</p>
+                <p>Eletricistas</p>
+                <p>Pedreiros</p>
+                <p>Pintores</p>
+                <p>Faz tudo</p>
+            </DivJobs>
+
+            <DivImgs>
+                
                 <img src={iconWall} alt="Wall" />
+                <img src={iconEngi} alt="Engineer" />
+                <img src={iconBrick} alt="Brickwork" />
                 <img src={iconSpatula} alt="Spatula" />
                 <img src={iconWorker} alt="Worker" />
-            </divImgs>
+                
+            </DivImgs>
+
             <h2>Como Funciona</h2>
             <hr></hr>
+            
         </Main>
         <FooterApp />
         </div>

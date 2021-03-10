@@ -6,7 +6,6 @@ import { Button } from '@material-ui/core';
 import img45 from './images/45.svg';
 import img120 from './images/120.svg';
 import img250 from './images/250.svg';
-import circule from './images/circule.svg';
 
 import {DivContainers, DivImg} from './Styles/stylePremios';
 
